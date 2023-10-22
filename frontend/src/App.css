@@ -1,0 +1,74 @@
+body{
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  color: #f4b393;
+  /* background-color: rgb(202, 254, 237); */
+  background-color:black;
+background-image:
+radial-gradient(white, rgba(255,255,255,.2) 2px, transparent 40px),
+radial-gradient(white, rgba(255,255,255,.15) 1px, transparent 30px),
+radial-gradient(white, rgba(255,255,255,.1) 2px, transparent 40px),
+radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 2px, transparent 30px);
+background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
+}
+
+input[type=file],#title{
+  border: 2px solid rgb(183, 150, 138);
+  padding: 10px;
+  border-style: dashed;
+  border-radius:10px ;
+}
+#title{
+  padding: 6px;
+  background-color: inherit;
+  color: #f4b393;
+  outline: none;
+}
+input[type=file]::file-selector-button ,#assign{
+  margin-right: 20px;
+  border: none;
+  background: #246283;
+  padding: 4px 6px;
+  color: #f4b393;
+  font-family:monospace;
+  font-size: 14px;
+  border-radius: 10px;
+  /* color: #fff; */
+  border: #246283 solid 3px;
+  cursor: pointer;
+}
+h2{
+  margin-top: 2px;
+  margin-left: 2px;
+}
+#image{
+  padding: 10px;
+}
+#sub-gallery{
+  /* overflow: hidden; */
+  flex-wrap: wrap;
+  margin-top: -10px;
+  display: flex;
+  flex-direction: row;
+}
+#gallery{
+  padding:10px;
+  width: fit-content;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: rgb(17, 17, 29) 2px 1px 4px 4px;
+  text-align: left;
+  margin: auto;
+  margin-top: 25px;
+}
+input[type=file]::file-selector-button:hover,#assign:hover {
+  background-color: black;
+  border: #246283 solid 3px;
+}
+#assign{
+  font-size: 13px;
+  padding: 5px;
+  font-family:monospace;
+}
